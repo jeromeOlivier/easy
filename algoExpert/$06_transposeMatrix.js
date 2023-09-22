@@ -64,7 +64,7 @@ const one = [
 //     );
 // }
 
-const transpose = (m) => Array.from({ length: m[0].length }, (_, i) => m.map(r => r[i]));
+const transpose = (matrix) => Array.from({ length: matrix[0].length }, (_, index) => matrix.map(row => row[index]));
 
 
 console.log(transpose(one));
